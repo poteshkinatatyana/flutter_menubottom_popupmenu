@@ -36,7 +36,7 @@ class HelloConvexAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello ConvexAppBar'),
+        title: Text('Hello '),
         actions: [
           PopupMenuButton(
               position: PopupMenuPosition.under,
@@ -106,11 +106,7 @@ class HelloConvexAppBar extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Center(
-              child: TextButton(
-            child: Text('Click to show full example'),
-            onPressed: () => Navigator.of(context).pushNamed('/bar'),
-          )),
+          Text('Hello'),
         ],
       ),
       bottomNavigationBar: ConvexAppBar(
